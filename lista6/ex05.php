@@ -16,6 +16,8 @@
 
             $media = ($nota1 + $nota2 + $nota3) / 3;
 
+            $media = number_format($media,1);   
+
             echo "
                 <p>Aluno(a): $nome </p>
                 <p>Média: $media </p>

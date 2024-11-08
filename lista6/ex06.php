@@ -6,8 +6,11 @@
     </div>
     <?php
     if ($_SERVER["REQUEST_METHOD"] == "POST" ) {   
-        $A = $_POST["B"];
-        $B = $_POST["A"];
+        $A = $_POST["A"];
+        $B = $_POST["B"];
+        $TROCADOR = $A;
+        $A = $B;
+        $B = $TROCADOR;
 
         echo "
             <p>Valor de A: $A</p>
